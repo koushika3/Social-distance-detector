@@ -13,3 +13,11 @@ In this program, we use the captured video stream to identify whether the people
 Green box is drawn outlining the person if they are within distance of minimum 6 feet from others, 
 
 else Red box is drawn indicating they are not maintaing a safe distnace from others.
+
+--> social_dist_storage.py
+
+It has all the functionality as the above program, additionally some extra features:
+
+ 1. We have added a parameter called Risk Factor(RF = #people within unsafe distance/ #people) 
+
+ 2. We store Timestamp and RF every second in a CSV file, which can be used for further analysis.
