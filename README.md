@@ -21,3 +21,13 @@ It has all the functionality as the above program, additionally some extra featu
  1. We have added a parameter called Risk Factor(RF = #people within unsafe distance/ #people) 
 
  2. We store Timestamp and RF every second in a CSV file, which can be used for further analysis.
+
+--> social_dist_bolt_sms.py
+
+ Furthermore, in this program we have integrated Bolt IoT Wifi module to give out an alarm whenever the RF > 0.3. 
+
+ This alarm will alert the people to maintain the social diatance. Once RF <= 0.3 the alarms stops ringing. 
+
+ Also, if the RF > 0.5 concerned authorites will be alerted via SMS facility in our program. 
+
+ In Addition to that, we are storing RF and Timestamp in MySQL database in this program instead of a CSV file.
